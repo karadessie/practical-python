@@ -1,15 +1,15 @@
 print("Welcome!")
 name = input("What is your name?\n")
-print("choose random number between 1 and 100\n")
+print("choose a number between 1 and 100\n")
 guess = input("What is your guess?\n")
-numguess = 50
-number = 75
+num_guesses = 10
+computers_number = 75
     
-if guess > number:
+if guess > computers_number:
         print("Your guess is too high, try again")
-        numguess = numguess + 1
-if guess < number:   
+        num_guesses = num_guesses + 1
+elif guess < computers_number:   
         print("Your guess is too low, try again")
-        numguess = numguess + 1
+        num_guesses = num_guesses + 1
 else:
         print("Congratulations " + name + "!")
